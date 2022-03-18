@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Rocio Sanchez
+=======
+Cristian
+>>>>>>> 0f3c8b875b1557e459caf24c32769b39c7a52208
