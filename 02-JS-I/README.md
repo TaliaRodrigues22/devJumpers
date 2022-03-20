@@ -1,6 +1,6 @@
 <img  src='../logo.png' height='70px'>
 
-# Lección 2: Introducción a Javascript
+# Lección 2: Introducción Integral a Javascript
 
 En esta lección cubriremos:
 
@@ -14,7 +14,11 @@ En esta lección cubriremos:
 * Operadores de comparación (continuación)
 * Flujos de control (continuación)
 * Operados lógicos
+* Introduccion a las funciones
+* Funciones flecha
+* Switch
 * Introducción a Node y NPM
+
 
 
 
@@ -398,11 +402,191 @@ Un par de cosas a tener en cuenta sobre los operadores lógicos.
 
 * Usá paréntesis. Como vimos en el segundo ejemplo de operador `!`, usamos paréntesis para evaluar PRIMERO lo que estaba dentro de los paréntesis, luego aplicamos el operador `!`. Podemos ajustar cualquier expresión entre paréntesis y se evaluará antes de evaluar la expresión como un todo.
 
+## Introducción a las Funciones
+
+Las funciones son una parte muy importante de todo lenguaje de programacion y sobre todo en JavaScript. Són tipos particulares de Objetos, llamados `callable objects` u objetos invocables, por lo que tienen las mismas propiedades que cualquier objeto.
+
+Ahora que tenemos un conjunto de variables, necesitamos funciones para calcularlas, cambiarlas, hacer algo con ellas. Hay tres formas en que podemos construir una función.
+
+```javascript
+    function miFuncion() {}
+    var otraFuncion = function () {};
+    var yOtra = () => {};
+```
+
+Usaremos la primera forma en esta lección y hablaremos sobre las otras formas en próximas lecciones.
+
+### Anatomía de una Función
+
+```javascript
+function miFuncion() {}
+```
+
+Una función comenzará con la palabra clave `function`, esto le dice a lo que sea que esté ejecutando tu programa que lo que sigue es una función y que debe tratarse como tal. Después de eso viene el nombre de la función, nos gusta dar nombres de funciones que describan lo que hacen. Luego viene un paréntesis abierto y uno cercano. Y finalmente, abra y cierre los corchetes. Entre estos corchetes es donde irá todo nuestro código a ejecutar.
+
+```javascript
+function logHola() {
+    console.log('hola!');
+}
+
+logHola();
+```
+
+En este ejemplo declaramos una función `logHola` y la configuramos en` console.log` `'hello'`. Entonces podemos ver que para ejecutar esta función, necesitamos escribir el nombre y los paréntesis. Esta es la sintaxis para ejecutar una función. Una función siempre necesita paréntesis para ejecutarse.
+
+### Argumentos
+
+Ahora que podemos ejecutar una función básica, vamos a comenzar a pasarle argumentos.
+
+```javascript
+function logHola(nombre) {
+    console.log('Hola, ' + nombre);
+}
+
+logHola('Martin');
+```
+
+Si agregamos una variable a los paréntesis cuando declaramos la función, podemos usar esta variable dentro de nuestra función. Iniciamos el valor de esta variable pasándola a la función cuando la llamamos. Entonces en este caso `nombre = 'Martin'`. También podemos pasar otras variables a esto:
+
+```javascript
+function logHola(nombre) {
+    console.log( `Hola, ${nombre}`);
+}
+
+var miNombre = 'Antonio';
+logHola(miNombre);
+```
+
+Podemos agregar múltiples argumentos colocando una coma entre ellos:
+
+```javascript
+function sumarDosNumeros(a, b) {
+  var suma = a + b;
+  return suma;
+}
+
+sumarDosNumeros(1, 5); // 6
+```
+### Declaración "return" y Scope
+
+En el ejemplo anterior presentamos la declaración `return`. No vamos a usar `console.log` con todo lo que salga de una función. Lo más probable es que queramos devolver algo. En este caso es la suma de los dos números. Piense en la declaración de retorno ("return") como la única forma en que los datos escapan de una función. No se puede acceder a nada más que a lo que se devuelve fuera de la función. También tenga en cuenta que cuando una función golpea una declaración de retorno, la función detiene inmediatamente lo que está haciendo y "devuelve" lo especificado.
+
+```javascript
+function dividirDosNumeros(a, b) {
+  var producto = a / b;
+  return producto;
+}
+
+dividirDosNumeros(6, 3); // 2
+console.log(producto); // undefined
+```
+Si intentamos `console.log` algo que declaramos dentro de la función, devolverá `undefined` porque no tenemos acceso a él fuera de la función. Esto se llama Scope ("alcance"). La única forma de acceder a algo dentro de la función es devolverlo.
+
+También podemos establecer variables para igualar lo que devuelve una función.
+
+```javascript
+function restarDosNumeros(a, b) {
+  var diferencia = a - b;
+  return diferencia;
+}
+
+var diferenciaDeResta = restarDosNumeros(10, 9);
+console.log(diferenciaDeResta); // 1
+console.log(diferencia); // undefined
+```
+
+Podemos ver que la diferencia se establece dentro de la función. La variable dentro de la función solo pertenece dentro de la función.
+
+## Funciones flecha
+funcion flecha, se elimina la palabra function y se coloca la flecha luego de los parentesis
+ejemplos 
+si solamente usamos un parámetro no lleva paréntesis, y si tiene una sola expresión o línea de códigos NO LLEVA LLAVES
+
+const saludarOK = nombre =>  document.write(`Hola ${nombre} como estas`);
+
+ saludarOK("Arbi")
+
+let suma  = (num1, num2) => {
+     let resultado = num1+ num2
+     document.write(resultado);
+      document.write("<br>")
+     }
+    suma (32,32) ; //64
+
+## Switch
+
+La declaración switch evalúa una expresión, comparando el valor de esa expresión con una instancia case, y ejecuta declaraciones asociadas a ese case, así como las declaraciones en los case que siguen.
+
+Syntaxis
+switch (expresión) {
+  case valor1:
+    //Declaraciones ejecutadas cuando el resultado de expresión coincide con el valor1
+    [break;]
+  case valor2:
+    //Declaraciones ejecutadas cuando el resultado de expresión coincide con el valor2
+    [break;]
+  ...
+  case valorN:
+    //Declaraciones ejecutadas cuando el resultado de expresión coincide con valorN
+    [break;]
+  default:
+    //Declaraciones ejecutadas cuando ninguno de los valores coincide con el valor de la expresión
+    [break;]
+}
+expresión
+Es una expresión que es comparada con el valor de cada instancia case.
+case valorN
+Una instancia case valorN es usada para ser comparada con la expresión. Si la expresión coincide con el valorN, las declaraciones dentro de la instancia case se ejecutan hasta que se encuentre el final de la declaración switch o hasta encontrar una interrupción break.
+default
+Una instancia default, cuando es declarada, es ejecutada si el valor de la expresión no coincide con cualquiera de las otras instancias case valorN.
+Descripción
+Si ocurre una coincidencia, el programa ejecuta las declaraciones asociadas correspondientes. Si la expresión coincide con múltiples entradas, la primera será la seleccionada, incluso si las mayúsculas son tenidas en cuenta.
+
+El programa primero busca la primer instacia case cuya expresión se evalúa con el mismo valor de la expresión de entrada (usando comparación estricta, ===) y luego transfiere el control a esa cláusula, ejecutando las declaraciones asociadas. Si no se encuentra una cláusula de case coincidente, el programa busca la cláusula default opcional, y si se encuentra, transfiere el control a esa instancia, ejecutando las declaraciones asociadas. Si no se encuentra una instancia default  el programa continúa la ejecución en la instrucción siguiente al final del switch. Por convención, la instancia default es la última cláusula, pero no tiene que ser así.
+
+La declaración break es opcional y está asociada con cada etiqueta de case y asegura que el programa salga del switch una vez que se ejecute la instrucción coincidente y continúe la ejecución en la instrucción siguiente. Si se omite el  break  el programa continúa la ejecución en la siguiente instrucción en la declaración de switch .
+
+
+¿Qué pasa si olvido un break?
+Si olvidas un break, el script se ejecutará desde donde se cumple la condición y ejecutará el siguiente case independientemente si esta condición se cumple o no. Ver el siguiente ejemplo:
+
+var foo = 0;
+switch (foo) {
+  case -1:
+    console.log('1 negativo');
+    break;
+  case 0: // foo es 0, por lo tanto se cumple la condición y se ejecutara el siguiente bloque
+    console.log(0)
+    // NOTA: el "break" olvidado debería estar aquí
+  case 1: // No hay sentencia "break" en el 'case 0:', por lo tanto este caso también será ejecutado
+    console.log(1);
+    break; // Al encontrar un "break", no será ejecutado el 'case 2:'
+  case 2:
+    console.log(2);
+    break;
+  default:
+    console.log('default');
+}
+Copy to Clipboard
+¿Puedo usar un <default> entre condiciones?
+Sí, ¡es posible! JavaScript retornará a la instancia default en caso de no encontrar una coincidencia:
+
+var foo = 5;
+switch (foo) {
+  case 2:
+    console.log(2);
+    break; // al encontrar este 'break' no se continuará con el siguiente 'default:'
+  default:
+    console.log('default')
+    // fall-through
+  case 1:
+    console.log('1');
+}
+Al estar el case 1: a continuación de default, y al no haber un break de por medio, veremos que la declaración del case 1: será ejecutada, apareciendo el resultado 1 en el log de consola.
 
 ## Introducción a Node y NPM
 
 _Node.js_ es un entorno de tiempo de ejecución desarrollado originalmente para su uso en servidores/back-end. Tendremos que instalarlo en nuestras máquinas para completar los próximos ejercicios. Para instalar Node, haga clic aquí: [Descargar e instalar Node.js](https://nodejs.org/en/download/). Node viene con "NPM" incluido. NPM es un administrador de paquetes ("package manager") para paquetes Javascript y lo usaremos a lo largo de nuestro aprendizaje en devJump. Una vez que hayas instalado Node.js, no necesitas hacer nada más para instalar NPM.
-
 
 ## Recursos adicionales
 
