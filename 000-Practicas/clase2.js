@@ -35,11 +35,11 @@ let num2 = 3; */
 
 /* let resultado = Math.pow(num1,num2);- //math.pow devolver un número elevado a un exponente*/
 /* let resultado = Math.round(num1) //math.round redondeará un número al número entero más cercano*/
-/* let resultado = Math.floor(num1)  */ //math.floor siempre redondeará un número al número entero más cercano hacia abajo*/
-/* let resultado = Math.ceil(num1)  *//*  math.ceil siempre redondeará un número al número entero más cercano hacia arriba */
+/* let resultado = Math.floor(num1)  //math.floor siempre redondeará un número al número entero más cercano hacia abajo*/
+/* let resultado = Math.ceil(num1) //  math.ceil siempre redondeará un número al número entero más cercano hacia arriba */
 /* document.write (resultado); */
 
-//.lenth
+//.length
 /*  let nombre = "pepe";
 
  document.write (nombre.length); */
