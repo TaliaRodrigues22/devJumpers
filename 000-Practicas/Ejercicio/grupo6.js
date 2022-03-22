@@ -1,6 +1,6 @@
- //Ejercicio uno
- 
- let nombre = prompt("¿Cual es tu nombre?");
+//Ejercicio 1
+
+let nombre = prompt("¿Cual es tu nombre?");
 
  let numero1 = parseInt(prompt("ingresa un numero"));
  let numero2 = parseInt(prompt("ingresa otro numero"));
@@ -13,7 +13,7 @@
  let total = suma + (nombre.length);
  document.write ("El resultado total es: " + total); 
 
-//Ejercicio 2
+ //Ejercicio 2
 
 alert('hello arbi')
 
