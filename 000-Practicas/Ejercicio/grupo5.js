@@ -24,8 +24,9 @@ document.write("El resultado de la suma de tus numeros mas la cantidad de las le
 alert("Hello Arbi"); 
 let nombre=prompt("Introducir nombre");
 let nombre2=prompt("Introducir otro nombre");
-document.write("Hello Arbi ");
-document.write(" " +(3+5)+ " ");
-document.write(" Hola " + nombre);
-document.write(" Hola "+ nombre2 + " tu nombre tiene " + (nombre2.length)+ " letras.");
+document.write("Hello Arbi <br> ");
+document.write(` ${3+5} <br>`);
+document.write(` Hola ${nombre} <br>`);
+//document.write(" Hola "+ nombre2 + " tu nombre tiene " + (nombre2.length)+ " letras.");
+document.write (` Hola ${nombre2} tu nombre tiene ${nombre2.length} letras`)
 
