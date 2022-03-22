@@ -17,12 +17,12 @@ let nombre = prompt("¿Cual es tu nombre?");
 
 alert('hello arbi')
 
-document.write (" hello arbi ")
+document.write ("<br>hello arbi")
 
 document.write (3+5)
 
-let nombreDos = prompt("ingrese nombre de usuario ")
-document.write (" Hola " + nombreDos)
+let nombreDos = prompt("ingrese nombre de usuario")
+document.write ("<br>Hola " + nombreDos)
 
 let nombre2 = prompt("ingresa tu nombre de nuevo")
-document.write(" Hola " + nombreDos + " tu nombre tiene " + nombreDos.length + " letras")
+document.write(`<br> Hola ${nombre2} tu nombre tiene ${nombre2.length} letras`)
