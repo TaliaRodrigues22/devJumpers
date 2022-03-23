@@ -1,44 +1,70 @@
 
-// let nombre = prompt ("Hola ¿Cómo te llamas?");
-// alert("Hola " + nombre + " Bienvenidx a la página");
+ //EJERCICIO 1
 
-// let numero1 = parseInt (prompt ("Ingrese un número"));
+let nombre = prompt ("Inserte su nombre aquí");
+let edad = parseInt( prompt(` Hola ${nombre} coloca tu edad`));
 
-// let numero2 = parseInt (prompt ("Ingrese otro número"));
+if (edad>=18) {
+alert (`${nombre} Podes entrar`);
+}
 
-// let resultado = (numero1 + numero2);
-// alert ("El resultado de los dos numeros ingresados es " + resultado);
+else if(edad<18){
+    alert (` ${nombre} No podes entrar`);
+    }
+
+else {
+alert(`Por favor ${nombre} ingrese solo números`)
+} 
 
 
-// document.write("El resultado de las sumas mas la cantidad de la letra de tu nombre es: " + (nombre.length + resultado));
+
+// EJERCICIO 2
+
+let nombre = prompt ("Inserte su nombre aquí");
+alert (`${nombre} tu nombre tiene ${nombre.length} letras`);
+
+let numero = parseInt (prompt(`Inserte un número para hacer una suma`));
+alert(`${(nombre.length+numero)}`)
 
 
-// let nombre = prompt ("Hola ¿Cómo te llamas?");
-// alert("Hola " + nombre + " Bienvenidx a la página");
 
-// let numero1 = parseInt (prompt ("Ingrese un número"));
+// EJERCICIO 3
 
-// let numero2 = parseInt (prompt ("Ingrese otro número"));
+let n1 = parseFloat(prompt("Ingrese un número"));
+let n2 = parseFloat (prompt("Ingrese otro número"));
 
-// let resultado = (numero1 + numero2);
-// alert ("El resultado de los dos numeros ingresados es " + resultado);
+if (n1>n2) {
+    document.write (`El número ${n1} es mayor a ${n2}`);
+}
+else if (n2>n1) {
+    document.write (`El número ${n1} es menor a ${n2}`);
+}
+else {
+document.write (`${n1} Y ${n2} son iguales`);
+}
 
-// document.write("El resultado de las sumas mas la cantidad de la letra de tu nombre es: " + (nombre.length + resultado));
 
-// Les dejo ejercicios complementarios para los grupos que terminaron . (Agregarlos en su archivo js )
-//1.- Escribe un programa de una sola línea que haga que aparezca en la pantalla un alert que diga «Hello Arbi».
-//2.- Escribe un programa de una sola línea que escriba en la pantalla un texto que diga «Hello Arbi».
-//3.- Escribe un programa de una sola línea que escriba en la pantalla el resultado de sumar 3 + 5.
-//4.- Escribe un programa de dos líneas que pida el nombre del usuario con un prompt y escriba en pantalla un texto que diga «Hola (AcavaNombreQueIngresoElUsuarix)»
-//5.- Escribe un programa de dos lineas que pida el nombre al usuario con un prompt y escriba en pantalla un texto que diga «Hola (nombre) tu nombre tiene (cantidaddeletras) letras»
 
-/**Ejercicio 1*/
-alert("Hola Arbi");
-/**Ejercicio 2*/
-document.write("<br/>Hola Arbi");
-/*Ejerciocio 3*/
-document.write("<br/> La suma entre 3 + 5 es: "+(3+5));
-//Ejercicio 4/5.- Escribe un programa de dos lineas que pida el nombre al usuario con un prompt y 
-//escriba en pantalla un texto que diga «Hola (nombre) tu nombre tiene (cantidaddeletras) letras»
-let nombre = prompt("Ingrese nombre");
-document.write("<br/>Hola "+nombre + " tu nombre tiene " +nombre.length +" letras");
+// EJERCICIO 4
+
+let categorias = parseInt (prompt("Ingrese alguna de las siguientes categorias 1-repositos, 2 cajero, 3-supervisor"));
+
+let repositores = 15890+(15890*(10/100));
+let cajeros = 25630.39;
+let supervisores = (35560.20 -((35560.20)*(11/100))) .toFixed(2);
+
+if(categorias==1){
+    document.write (`repositor su categoria es ${categorias} y su sueldo es de ${repositores}`);
+}
+
+else if(categorias==2){
+    document.write(`cajero su categoria es ${categorias} y su sueldo es de ${cajeros}`);
+}
+
+else if(categorias==3){
+    document.write(`supervisor su categoria es ${categorias} y su sueldo es de ${supervisores}`);
+}
+
+else{
+    document.write(`Ingresa un número o un número que este dentro de las categorias`);
+}
