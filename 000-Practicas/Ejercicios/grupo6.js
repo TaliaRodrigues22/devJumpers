@@ -68,8 +68,9 @@ if(num1<num2){
     document.write(`El numero mas grande es ${num2}`)
 } else if(num1>num2){
     document.write(`El numero mas grande es ${num1}`)
-} else {
-    alert('no ingresaste un numero')
+} else if(num1=num2){
+    document.write(`${num1} es igual a ${num2}`)
+}
 }*/
 
 /* Ejercicio 4: Condicionales
