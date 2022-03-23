@@ -70,15 +70,15 @@ document.write("el resultado de la suma de tus numeros mas la cantidad de las le
 
 // Ejercicio 3
 //Escribe un programa que pida dos números y escriba en la pantalla cual es el mayor.
-let number1 = parseInt(prompt("ingresa un número"));
+// let number1 = parseInt(prompt("ingresa un número"));
 
-let number2 = parseInt(prompt("ingresa otro número"));
+// let number2 = parseInt(prompt("ingresa otro número"));
 
-if(number1>number2){
-    document.write(`El ${number1} es el número mas grande que ingresaste`)
-}else{
-    document.write(`El ${number2} es el número mas grande que ingresaste `)
-};
+// if(number1>number2){
+//     document.write(`El ${number1} es el número mas grande que ingresaste`)
+// }else{
+//     document.write(`El ${number2} es el número mas grande que ingresaste `)
+// };
 
 /* Ejercicio 4: Condicionales
 1) Una pequeña despensa desea calcular los sueldos de sus empleados. Los puestos
@@ -89,6 +89,37 @@ c) Los supervisores cobran $35.560,20 en bruto al cual se les descuenta un 11%
 de jubilación.
 Se necesita un programa que, dependiendo el tipo de empleado del que se trate,
 calcule y muestre en pantalla el correspondiente sueldo. */
+
+
+
+let categoría = prompt("Ingresa el número correspondiente a tu categoría (1)repositor, (2)cajero o (3)supervisor");
+
+
+let repositor = ((15.890/100 * 10) + 15.890);
+let cajero= "$25.630,89";
+let supervisor = Math.round(35560.20 -((35560.20)*(11/100)));
+
+if (categoría=="1"){
+        document.write (`Su sueldo de repositor es $${repositor}`)
+}else if (categoría=="2"){
+        document.write (`Su sueldo de cajero es ${cajero}`)
+}else if (categoría=="3"){
+    document.write (`Su sueldo de supervisor es $${supervisor}`)
+
+}else{
+    document.write (`No ingreso ninguna de las categorías correspondientes`)
+};
+
+
+
+
+
+
+
+
+
+
+
 
 
 
