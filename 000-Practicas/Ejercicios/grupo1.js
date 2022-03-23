@@ -37,32 +37,38 @@ document.write("el resultado de la suma de tus numeros mas la cantidad de las le
 
 
 // 23/3 
-//Ejercicio 1
+                                                             //Ejercicio 1 
 // Crear un programa que:
 //pida el nombre 
-let nombre= prompt ("ingresar nombre");
+//let nombre= prompt ("ingresar nombre");
 // pida la edad
-let edad= prompt ("ingrese edad");
+//let edad= prompt ("ingrese edad");
 // si la edad es igual o mayor a 18 = alerta que diga : "(nombre) podes entrar"
-if(edad>=18) { 
-     alert(`${nombre} podes entrar` )
+//if(edad>=18) { 
+  //   alert(`${nombre} podes entrar` )
  // si la edad es menor a  18 = alerta que diga : "(nombre) no podes entrar"
-} else if (edad<18){
-    alert(`${nombre} no podes entrar` )
+//} else if (edad<18){
+//alert(`${nombre} no podes entrar` )
 
-} else{
-     alert(`${nombre} no ingresaste ningun numero`)// si el usuari/o ingresa una letra devolver un mensaje de error
-}
+//} else{
+   //  alert(`${nombre} no ingresaste ningun numero`)// si el usuari/o ingresa una letra devolver un mensaje de error
+//}
 
 
 
-//Ejercicio 2
+                                                           //Ejercicio 2
 // Crear un programa que:
 // pida el nombre
+let nombre= prompt("Ingresá tu nombre");
 // mostrar un alerta que le diga la cantidad de letras que tiene su nombre
+alert (`Tu nombre tiene ${nombre.length} letras `);
 // que pida un número
+let numero=parseInt (prompt("Ingresá un número"));
 // Mostrar un alerta que le muestre al usuario/a el resultado de la suma del numero ingresado + la cantidad de caracteres de su nombre.
-// Ejercicio 4 
+let resultado= (nombre.length + numero)
+alert (`La suma de las letras de tu nombre más el número que ingresaste es ${resultado}`)
+
+// Ejercicio 3
 //Escribe un programa que pida dos números y escriba en la pantalla cual es el mayor.
 
 /* Ejercicio 4: Condicionales
