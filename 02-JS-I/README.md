@@ -13,6 +13,7 @@ En esta lección cubriremos:
 * `Undefined` y `null`
 * Operadores de comparación (continuación)
 * Flujos de control (continuación)
+* If Ternario
 * Operados lógicos
 * Introduccion a las funciones
 * Funciones flecha
@@ -343,6 +344,41 @@ if (false) {
     console.log('Este código correrá');
 }
 ```
+### If Ternario
+¿Cómo funciona el IF ternario?
+El operador condicional (ternario) es el único operador en JavaScript que tiene tres operandos. Este operador se usa con frecuencia como atajo para la instrucción if. Siendo un condicional simple que ejecuta una de dos instrucciones posibles dependiendo de la evaluación previa de una condición.
+
+Sintaxis
+condición ? expresión1 : expresión2;
+Parámetros
+Condición.- Expresión que se puede evaluar como verdadera o falsa.
+Expresión 1 y 2.- Expresiones con valores definidos que pueden ejecutarse dependiendo de la condición.
+Forma de uso
+variable = expresion ? true_value : false_value;
+Esto permite básicamente una asignación condicional a una variable en función de la evaluación de la expresión. Si es cierto, entonces true_value se asigna a la variable, caso contrario, entonces false_value se asigna a la variable.
+
+Ejemplos
+var max = ( num1 > num2 ) ? num1 : num2 ;
+En este ejemplo es , max para ser asignado el número con el valor más alto . La expresión indica que si num1 es mayor que num2, entonces num1 se asigna a max . Si, sin embargo, la expresión es falsa ( lo que significa que num2 es menor o igual a num1 ), a continuación, num2 se asigna a máx .
+
+var miEdad = 24;
+var mayorEdad = (miEdad > 18) ? “Sí, eres mayor de edad” : “No, sigue intentando”;
+En este segundo ejemplo vemos cómo reconocer un dato si es mayor a 18, y asignar a la variable un string, con dos posibilidades.
+
+var diaFeriado = true;
+“Hoy debo pagar ” + ( diaFeriado ? “19 pesos” : “15 pesos”);
+En este otro caso evaluamos una expresión booleana, y se obtiene un string el cual posteriormente es concatenado a otro.
+
+Podemos usar también el operador ternario con una estructura más larga.
+
+var a = 11;
+var numeroObtenido = a == 5 ? ‘Cinco’ :
+                    a == 7 ? ‘Siete’:
+                    a == 11 ? ‘Once’:
+                    a == 15 ? ‘Quince’:
+                    'Otro Número;
+
+console.log( numeroObtenido ); // Once
 
 ## Operadores lógicos
 
@@ -567,7 +603,7 @@ switch (foo) {
   default:
     console.log('default');
 }
-Copy to Clipboard
+
 ¿Puedo usar un <default> entre condiciones?
 Sí, ¡es posible! JavaScript retornará a la instancia default en caso de no encontrar una coincidencia:
 
