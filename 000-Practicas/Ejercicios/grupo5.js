@@ -92,15 +92,12 @@ if (num>num2){
 else if(num2>num){
     document.write(`${num2} es mayor que ${num}`);
 }
-else if (num===num2){
+else {
     document.write("Los numeros ingresados son iguales");
 }
-else {
-    document.write("ERROR!");
-} */
 
 
- //Ejercicio 4. Ahora si
+/* Ejercicio 4. Ahora si
 let empl = prompt(`Ingresa: R (si sos repositor) - C (si sos cajero) - S (si sos supervisor)`);
 
 if(empl === "R" || empl === "r"){
@@ -116,4 +113,4 @@ else if (empl === "S" || empl === "s"){
 else{
     alert("No pusiste los datos solicitados, vuelta a intentarlo.");
     window. location. reload(); // Esto refresca  la página luego de ingresar un dato no válido. Luana Crack.
-}
+} */
