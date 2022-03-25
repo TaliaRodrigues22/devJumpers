@@ -42,7 +42,7 @@ document.write ("Hola " + nombre) ; */
 
 //Ejercicio 23-03
 
- /* let nombre = prompt (`Ingresa tu nombre`), edad = parseInt (prompt (`Ingresa tu edad`));
+let nombre = prompt (`Ingresa tu nombre`), edad = parseInt (prompt (`Ingresa tu edad`));
 
 if (edad>=18) {
     alert (` ${nombre} podes entrar`)
@@ -54,11 +54,11 @@ if (edad>=18) {
 
  else {
      alert (` Error `)
- }  */
+ } 
 
  //Ejercicio 2
 
- /* let nombre = prompt (`Ingresa tu nombre`);
+ let nombre = prompt (`Ingresa tu nombre`);
   
   alert (`La cantidad de letras de tu nombre es ${nombre.length}`);
 
@@ -67,12 +67,12 @@ if (edad>=18) {
   let suma = nombre.length + numero;
   
   alert (` ${suma}`); 
-  */
+
 
 
  //Ejercicio 3 
 
-/*  let numero1 = parseInt (prompt (`Introduce un número`)), numero2 = parseInt(prompt (`Intoduce otro número`));
+let numero1 = parseInt (prompt (`Introduce un número`)), numero2 = parseInt(prompt (`Intoduce otro número`));
 
  if (numero1>numero2) {
      document.write (` Este número es el mayor: ${numero1}`);
@@ -80,7 +80,7 @@ if (edad>=18) {
 
  else {
     document.write (` Este numero es el mayor: ${numero2}`);
-}  */
+} 
 
 //Ejercicio 4
 
