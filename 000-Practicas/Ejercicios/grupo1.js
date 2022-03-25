@@ -92,29 +92,79 @@ calcule y muestre en pantalla el correspondiente sueldo. */
 
 
 
-let categoría = prompt("Ingresa el número correspondiente a tu categoría (1)repositor, (2)cajero o (3)supervisor");
+// let categoría = prompt("Ingresa el número correspondiente a tu categoría (1)repositor, (2)cajero o (3)supervisor");
 
 
-let repositor = ((15.890/100 * 10) + 15.890);
-let cajero= "$25.630,89";
-let supervisor = Math.round(35560.20 -((35560.20)*(11/100)));
+// let repositor = ((15.890/100 * 10) + 15.890);
+// let cajero= "$25.630,89";
+// let supervisor = Math.round(35560.20 -((35560.20)*(11/100)));
 
-if (categoría=="1"){
-        document.write (`Su sueldo de repositor es $${repositor}`)
-}else if (categoría=="2"){
-        document.write (`Su sueldo de cajero es ${cajero}`)
-}else if (categoría=="3"){
-    document.write (`Su sueldo de supervisor es $${supervisor}`)
+// if (categoría=="1"){
+//         document.write (`Su sueldo de repositor es $${repositor}`)
+// }else if (categoría=="2"){
+//         document.write (`Su sueldo de cajero es ${cajero}`)
+// }else if (categoría=="3"){
+//     document.write (`Su sueldo de supervisor es $${supervisor}`)
 
-}else{
-    document.write (`No ingreso ninguna de las categorías correspondientes`)
+// }else{
+//     document.write (`No ingreso ninguna de las categorías correspondientes`)
+// };
+
+//EJERCICIOS 25/03
+
+//  Ejercicio 1: Escribe un  programa que pida 3 números y escriba en la pantalla el mayor de los tres.
+
+ let number1 = parseInt (prompt ("ingrese un numero" )) , number2 = parseInt (prompt ("ingrese otro numero")), number3= parseInt  (prompt("ingrese un ultimo numero"));
+
+if(number1> number2 && number1> number3 ) { 
+ document.write (`el ${number1} es el mayor de los numeros que ingresaste  `)
+ }
+ else if ( number2>  number3 && number2> number1 ) 
+ {document.write  (`el ${number2} es el mayor de los numeros que ingresaste `)}
+ else if (number3> number1 && number3> number2)
+  { document.write (`el ${number3} es el mayor de los numeros que ingresaste ` )
+ }
+
+ else if (number1== number2 && number1== number3) {
+ document.write ("los numeros que ingresaste son iguales")
+ }
+
+else{
+    alert ("error vuelve a intentar") ,
+    window.reload ()
+}; 
+
+
+//Ejercicio 2: Escribe un programa que pida un número y diga si es divisible por 2
+
+ let numero = parseInt (prompt ("ingrese un numero"));
+
+if(numero%2 === 0){
+   document.write(`${numero} es divisible por 2`)
+} else if (numero % 2 ==!0){
+   document.write(`${numero} NO es divisible por 2`)
+} else {
+   alert("Error no ingresaste un número"),
+   window.reload ()
+}; 
+
+
+
+
+
+//Ejercicio 3: Escribe un programa que pida un número y nos diga si es divisible por 2, 3, 5 o 7 (sólo hay que comprobar si lo es por uno de los cuatro) */
+
+
+let numero1 = parseInt(prompt ("ingrese un numero"));
+
+if(parseInt(numero1%2 === 0) || parseInt(numero1%3 === 0) || parseInt(numero1%5 === 0) || parseInt(numero1%7 === 0)){
+   document.write(`${numero1} es divisible por 2, 3, 5, o 7 `)
+} else if(parseInt(numero1%2 != 0) || parseInt(numero1%3 != 0) || parseInt(numero1%5 != 0) || parseInt(numero1%7 != 0)){
+   document.write(`${numero1} NO es divisible por 2, 3, 5, o 7 `)
+} else {
+   alert("Error no ingresaste un número"),
+   window.reload ()
 };
-
-
-
-
-
-
 
 
 

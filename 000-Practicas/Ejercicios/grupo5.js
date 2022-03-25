@@ -117,6 +117,7 @@ else if (empl === "S" || empl === "s"){
 else{
     alert("No pusiste los datos solicitados, vuelta a intentarlo.");
     window. location. reload(); // Esto refresca  la página luego de ingresar un dato no válido. Luana Crack.
+<<<<<<< HEAD
 }
 switch(empl){
      case "R" , "r": 
@@ -140,10 +141,64 @@ switch(empl){
 
 
 
+// Ejercicio 1: Escribe un  programa que pida 3 números y escriba en la pantalla el mayor de los tres.
+
+/* let num0 = parseInt(prompt("Ingrese un número")); //num0 buena practica para el uso de vectores/array
+let num1 = parseInt(prompt("Ingrese otro número"));
+let num2 = parseInt(prompt("Ingrese otro número"));
+if(num0 > num1 && num0 > num2){
+    document.write(`El primer numero digitado es ${num0} y es mayor que ${num1} y ${num2}`);
+}
+else if(num1 > num0 && num1 > num2){
+    document.write(`El segundo numero digitado es ${num1} y es mayor que ${num0} y ${num2}`);
+}
+else if(num2 > num0 && num2 > num1){
+    document.write(`El tercer numero digitado es ${num2} y es mayor que ${num0} y ${num1}`);
+}
+else if(num0===num1 || num0===num2 || num1===num2){
+    alert("Hay números repetidos");
+    window. location. reload();
+}
+else{
+    alert("ERROR! Verifique los datos ingresados");
+    window. location. reload(); 
+}*/
+
+
 
 //Ejercicio 2: Escribe un programa que pida un número y diga si es divisible por 2
 
 
 
 
+
+//Ejercicio 3: Escribe un programa que pida un número y nos diga si es divisible por 2, 3, 5 o 7 (sólo hay que comprobar si lo es por uno de los cuatro) *
+let num = parseFloat(prompt("Ingrese un numero para saber si es divisible por 2"));
+
+if(num%2==0) {
+    document.write(`Su numero ${num} es divisible por 2`);
+}/*  else if(num%2!==0){
+    document.write(`Su numero ${num} no es divisible por 2`);
+} Preguntar por que no funciona con el signo de exclamacion adelante del igual */
+    else if(num%2===!0){
+    document.write(`Su numero ${num} no es divisible por 2`);
+} else {
+    alert("No ingreso ningún número.");
+    window. location. reload();
+} // Preguntarle a gabi sobre el resultado con coma
+
+
+
 //Ejercicio 3: Escribe un programa que pida un número y nos diga si es divisible por 2, 3, 5 o 7 (sólo hay que comprobar si lo es por uno de los cuatro) */
+
+/* let num = parseFloat(prompt("Ingrese un numero para saber si es divisible por 2, 3, 5 o 7"));
+
+if(num%2==0 || num%3==0 || num%5==0 || num%7==0) {
+    document.write(`Su numero ${num} es divisible por 2, 3, 5, o 7, adivina cual`);
+} else if(!num%2==0 || !num%3==0 || !num%5==0 || !num%7==0){
+    document.write(`Su numero ${num} no es divisible ni por 2 ni 3 ni 5 ni 7, adivina cual`);
+} else {
+    alert("No ingreso ningún número.");
+    window. location. reload();
+} */
+
