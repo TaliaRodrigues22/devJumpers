@@ -92,12 +92,16 @@ if (num>num2){
 else if(num2>num){
     document.write(`${num2} es mayor que ${num}`);
 }
-else {
+else if (num===num2) {
     document.write("Los numeros ingresados son iguales");
 }
+else{
+    document.write("Escribir numeros");
+}
+*/
 
-
-/* Ejercicio 4. Ahora si
+/*
+ // Ejercicio 4. Ahora si
 let empl = prompt(`Ingresa: R (si sos repositor) - C (si sos cajero) - S (si sos supervisor)`);
 
 if(empl === "R" || empl === "r"){
@@ -113,4 +117,33 @@ else if (empl === "S" || empl === "s"){
 else{
     alert("No pusiste los datos solicitados, vuelta a intentarlo.");
     window. location. reload(); // Esto refresca  la página luego de ingresar un dato no válido. Luana Crack.
-} */
+}
+switch(empl){
+     case "R" , "r": 
+        document.write(`Hola repositor/a su sueldo es de un total de : $${15890*0.10+15890}`);
+        break;
+     case "C" , "c":
+        document.write("Hola cajero/a su sueldo es de un total de : $25.630,89");
+        break;
+     case "S" , "s" :
+        document.write(`Hola supervisor/a su sueldo es de un total de : $${Math.ceil(35560.20-35560.20*0.11)}`);
+        break; 
+    default:
+        document.write("Elegiste una opción que no existe");
+        break;    
+} // ejercicio 4 realizado con switch 
+*/
+
+
+//25/03/2022
+//Ejercicio 1: Escribe un  programa que pida 3 números y escriba en la pantalla el mayor de los tres.
+
+
+
+
+//Ejercicio 2: Escribe un programa que pida un número y diga si es divisible por 2
+
+
+
+
+//Ejercicio 3: Escribe un programa que pida un número y nos diga si es divisible por 2, 3, 5 o 7 (sólo hay que comprobar si lo es por uno de los cuatro) */
