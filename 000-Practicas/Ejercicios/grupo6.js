@@ -101,6 +101,9 @@ if(puesto == 1){
 } else {
     alert('no elegiste una categoria valida');
 }*/
+
+//Ejercicios 25-03
+
 //Ejercicio 1
 
 /*let num1 = parseInt(prompt(`Ingrese un numero`));
@@ -108,15 +111,15 @@ let num2 = parseInt(prompt(`Ingrese un segundo numero`));
 let num3 = parseInt(prompt(`Ingrese un tercer numero`));
 
 if(num1>num2 && num1>num3){
-    document.write(`<h1>el mayor es ${num1}</h1>`);
+    document.write(`<h1>El numero mayor es ${num1}</h1>`);
 }else if(num2>num1 && num2>num3){
-    document.write(`<h1>el mayor es ${num2}</h1>`);
+    document.write(`<h1>El numero mayor es ${num2}</h1>`);
 }else if(num3>num1 && num3>num2){
-    document.write(`<h1>el mayor es ${num3}<h1>`);
+    document.write(`<h1>El numero mayor es ${num3}<h1>`);
 }else if (num1 == num2 && num2 == num3 && num1 == num3){
-    document.write(`<h1>Son iguales</h1>`);
+    document.write(`<h1>Los numeros on iguales</h1>`);
 } else{
-    alert(`Ingrese un numero`);
+    alert(`Error: Debe ingresar numeros`);
 }*/
 
 //Ejercicio 2: Escribe un programa que pida un número y diga si es divisible por 2
@@ -128,7 +131,7 @@ if(num%2 === 0){
 } else if(num%2 ==! 0){
     document.write(`<h1>El numero no es divisible por dos</h1>`);
 } else{
-    document.write(`Ingrese un numero`);
+    alert(`Error: Debe ingresar un numero`);
 }*/
 
 //Ejercicio 3:
@@ -136,9 +139,9 @@ if(num%2 === 0){
 /*let num = parseInt(prompt("Ingresa un numero"));
 
 if(num % 2 === 0 || num % 3 === 0 || num % 5 === 0 || num % 7 ===0){
-    document.write(`<h1>el numero <strong>${num}</strong> es divisible por alguno de estos numeros: 2,3,5 o 7</h1>`);
-} else if(num % 2 ==! 0 && num % 3 ==! 0 && num % 5 ==! 0 && num % 7 ==!0){
-    document.write(`<h1>el numero <strong>${num}</strong> NO es divisible por ninguno de estos numeros: 2,3,5 o 7</h1>`);
+    document.write(`<h1>El numero ${num} es divisible por alguno de estos numeros: 2, 3, 5 o 7.</h1>`);
+} else if(num % 2 ==! 0 || num % 3 ==! 0 || num % 5 ==! 0 || num % 7 ==! 0){
+    document.write(`<h1>El numero ${num} NO es divisible por ninguno de estos numeros: 2, 3, 5 o 7.</h1>`);
 } else{
-    alert(`Ingrese un numero`);
+    alert(`Error: Debe ingresar numeros`);
 }*/
