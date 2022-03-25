@@ -35,10 +35,64 @@ document.write ("Hola " + nombre) ; */
 
 // 4,5 ejercicios
 
-let nombre = (prompt ("Hola, escribe tu nombre de usuario")) ;
+//let nombre = prompt ("Hola, escribe tu nombre de usuario") ;
 
-document.write ("Hola " + nombre + " tu nombre tiene " + nombre.length + " letras") ;
+//document.write ("Hola " + nombre + " tu nombre tiene " + nombre.length + " letras") ;
 
+
+//Ejercicio 23-03
+
+ /* let nombre = prompt (`Ingresa tu nombre`), edad = parseInt (prompt (`Ingresa tu edad`));
+
+if (edad>=18) {
+    alert (` ${nombre} podes entrar`)
+ }
+
+ else if (edad<=18)   {
+     alert  (`${nombre} no podes entrar`)
+ }
+
+ else {
+     alert (` Error `)
+ }  */
+
+ //Ejercicio 2
+
+ /* let nombre = prompt (`Ingresa tu nombre`);
+  
+  alert (`La cantidad de letras de tu nombre es ${nombre.length}`);
+
+  let numero = parseInt(prompt(`Ingresa número`));
+
+  let suma = nombre.length + numero;
+  
+  alert (` ${suma}`); 
+  */
+
+
+ //Ejercicio 3 
+
+/*  let numero1 = parseInt (prompt (`Introduce un número`)), numero2 = parseInt(prompt (`Intoduce otro número`));
+
+ if (numero1>numero2) {
+     document.write (` Este número es el mayor: ${numero1}`);
+ }
+
+ else {
+    document.write (` Este numero es el mayor: ${numero2}`);
+}  */
+
+//Ejercicio 4
+
+let nombre = prompt(`Ingresa tu nombre:`), categorías = prompt(`Hola ${nombre}, por favor indica tu categoría: Repositor - Cajero - Supervisor`), repositor = (15890 * 0.10) + 15890 , cajero = 25630.89 , supervisor = Math.round( 35560.20 - (35560.20 * 0.11) );
+ if ( categorías == "repositor" || categorías == "Repositor") {
+document.write (` ${nombre}, tu sueldo como repositor es de: $${repositor}`)
+}else if (categorías == "cajero" || categorías == "Cajero") {
+    document.write (` ${nombre}, tu sueldo como cajero es de: $${cajero}`)
+}else if  (categorías == "supervisor" || categorías == "Supervisor") {
+    document.write (` ${nombre}, tu sueldo como supervisor es de: $${supervisor}`)
+} else{
+      document.write (`Por favor introduzca alguna de las categorías anteriormente mencionadas.`)} 
 
 
 
