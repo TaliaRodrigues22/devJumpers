@@ -1,25 +1,25 @@
 
  //EJERCICIO 1
-
+ 
 let nombre = prompt ("Inserte su nombre aquí");
 let edad = parseInt( prompt(` Hola ${nombre} coloca tu edad`));
 
 if (edad>=18) {
-alert (`${nombre} Podes entrar`);
+alert (`${nombre} Podes entrar.`);
 }
 
 else if(edad<18){
-    alert (` ${nombre} No podes entrar`);
+    alert (` ${nombre} No podes entrar.`);
     }
 
 else {
-alert(`Por favor ${nombre} ingrese solo números`)
+alert(`Por favor ${nombre} ingrese solo números.`)
 } 
 
 
 
 // EJERCICIO 2
-
+ 
 let nombre = prompt ("Inserte su nombre aquí");
 alert (`${nombre} tu nombre tiene ${nombre.length} letras`);
 
@@ -29,18 +29,21 @@ alert(`${(nombre.length+numero)}`)
 
 
 // EJERCICIO 3
-
+ 
 let n1 = parseFloat(prompt("Ingrese un número"));
 let n2 = parseFloat (prompt("Ingrese otro número"));
 
 if (n1>n2) {
-    document.write (`El número ${n1} es mayor a ${n2}`);
+    document.write (`El número ${n1} es mayor a ${n2}.`);
 }
 else if (n2>n1) {
-    document.write (`El número ${n1} es menor a ${n2}`);
+    document.write (`El número ${n1} es menor a ${n2}.`);
+}
+else if (n1==n2) {
+    document.write (`${n1} Y ${n2} son iguales.`);
 }
 else {
-document.write (`${n1} Y ${n2} son iguales`);
+    document.write(`ERROR! Por favor, Ingrese un número.`);
 }
 
 
@@ -54,17 +57,17 @@ let cajeros = 25630.39;
 let supervisores = (35560.20 -((35560.20)*(11/100))) .toFixed(2);
 
 if(categorias==1){
-    document.write (`repositor su categoria es ${categorias} y su sueldo es de ${repositores}`);
+    document.write (`Repositor su categoria es ${categorias} y su sueldo es de $${repositores}.`);
 }
 
 else if(categorias==2){
-    document.write(`cajero su categoria es ${categorias} y su sueldo es de ${cajeros}`);
+    document.write(`Cajero su categoria es ${categorias} y su sueldo es de $${cajeros}.`);
 }
 
 else if(categorias==3){
-    document.write(`supervisor su categoria es ${categorias} y su sueldo es de ${supervisores}`);
+    document.write(`Supervisor su categoria es ${categorias} y su sueldo es de $${supervisores}.`);
 }
 
 else{
-    document.write(`Ingresa un número o un número que este dentro de las categorias`);
+    document.write(`Ingresa un número que este dentro de las categorias.`);
 }
